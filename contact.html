@@ -20,42 +20,23 @@
                 </div>
             </div>
         </nav>
-        
-        <section class="main">
+            
+        <section class="main_contact">
             <div class="overlay"></div>
         </section>
 
-        <div class="pictures">
+        <div class="contact">
             <div class="container">
-                <div class="p-frame">
-                    <a href=""><img src="images/Product_1.png" alt="Picture" style="width:360px;height:400px;"></a>
-                </div>
-                <div class="p-frame">
-                    <a href=""><img src="images/Product_2.png" alt="Picture" style="width:360px;height:400px;"></a>
-                </div>
-                <div class="p-frame">
-                    <a href=""><img src="images/Product_3.png" alt="Picture" style="width:360px;height:400px;"></a>
-                </div>
+                <h2 id="contact_title">Contact Me</h2>
+                <form class="contact_form" action="php/mail.php" method="POST">
+                    <p>Name</p> <input type="text" name="name">
+                    <p>Email</p> <input type="text" name="email">
+                    <p>Message</p> <textarea name="message" cols="25" rows="6"></textarea><br />
+                    <input type="submit" value="Send"><input type="reset" value="Clear">
+                </form>
             </div>
         </div>
-        <hr class="divider">
-            <div class="statistics">
-                <div class="container">
-                    <div class="stat">
-                        <i class="fas fa-users" style="font-size: 100px;"></i>
-                        <h4>124</h4>
-                    </div>
-                    <div class="stat">
-                        <i class="far fa-images" style="font-size: 100px;"></i>
-                        <h4>400</h4>
-                    </div>
-                    <div class="stat">
-                        <i class="fas fa-pound-sign" style="font-size: 100px;"></i>
-                        <h4>3476</h4>
-                    </div>
-                </div>
-            </div>
-        
+      
         <footer>
             <div class="container">
                 <label id="Professional-tab">Professional</label>

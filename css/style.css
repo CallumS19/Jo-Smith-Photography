@@ -42,11 +42,35 @@ nav .list a {
 
 .main {
     width: 100%;
-    background: url('../images/slider_img_1.png') no-repeat center center;
+    background: url('../images/slider_img_2.png') no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
     min-height: 100vh;
+}
+
+.main_about {
+  width: 100%;
+  background: url('../images/slider_img_1.png') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  min-height: 100vh;
+}
+
+.main_contact {
+  width: 100%;
+  background: url('../images/slider_img_3.png') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  min-height: 100vh;
+}
+.welcome_text {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .main .overlay {
@@ -81,7 +105,7 @@ nav .list a {
 .statistics {
     width: 100%;
     padding: 100px 0;
-    background-image: url("../images/slider_img_2.png");
+    background-image: url("../images/slider_img_4.png");
     background-size: cover;
 }
 
@@ -114,6 +138,67 @@ nav .list a {
   border: 1px solid #000;
 }
 
+/* About Start */
+.about {
+  width: 100%;
+  padding: 70px 0;
+}
+
+.about .container {
+  max-width: 1350px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container q {
+  font-size: 30px;
+}
+
+.about #about_title {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  letter-spacing: 5px;
+}
+
+.about #about_title:after {
+  display: block;
+  height: 2px;
+  background-color: #000;
+  content:" ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+/* Contact Start */
+.contact {
+  width: 100%;
+  padding: 70px 0;
+}
+
+.contact .container {
+  max-width: 1350px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact #contact_title {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  letter-spacing: 5px;
+}
+
+.contact #contact_title:after {
+  display: block;
+  height: 2px;
+  background-color: #000;
+  content:" ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
 /* Footer Start */
 footer {
     padding: 0;
