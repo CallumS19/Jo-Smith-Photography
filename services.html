@@ -1,83 +1,87 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Jo Smith Photography</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css" type="text/css" />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-    </head>
-    <body>
-        <nav>
-            <div class="container">
-                <div class="logo">
-                    <img src="images/Jo_Smith_Logo.png" alt="logo">
-                </div>
-                <div class="list">
-                    <a href="index.html" class="active">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="contact.html">Contact</a>
-                    <a href="services.html">Services</a>
+
+<head>
+    <title>Jo Smith Photography</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <img src="images/Jo_Smith_Logo.png" alt="logo">
+            </div>
+            <div class="list" id="topnav">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="services.html">Services</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="ResponsiveNav()">
+                <i class="fa fa-bars" style="color: #fff;"></i>
+            </a>
+        </div>
+    </nav>
+
+    <section class="main_contact">
+        <div class="overlay"></div>
+    </section>
+
+    <div class="services">
+        <h2 id="services_title">Services</h2>
+        <div class="container">
+            <div class="s-card">
+                <div class="s-card-info">
+                    <h1>Private Contractual Event Work</h1>
+                    <p>£40 Per Hour</p>
                 </div>
             </div>
-        </nav>
-            
-        <section class="main_contact">
-            <div class="overlay"></div>
-        </section>
-
-        <div class="services">
-            <h2 id="services_title">Services</h2>
-            <div class="container">
-                <div class="s-card">
-                    <div class="s-card-info">
-                        <h1>Private Contractual Event Work</h1>
-                        <p>£40 Per Hour</p>
-                    </div>
+            <div class="s-card">
+                <div class="s-card-info">
+                    <h1>Short-term Contractual Work</h1>
+                    <p>£25 Per Hour</p>
                 </div>
-                <div class="s-card">
-                    <div class="s-card-info">
-                        <h1>Short-term Contractual Work</h1>
-                        <p>£25 Per Hour</p>
-                    </div>
-                </div>
-                <div class="s-card">
-                    <div class="s-card-info">
-                        <h1>Long-term Contractual Work</h1>
-                        <p>Negotiable</p>
-                    </div>
+            </div>
+            <div class="s-card">
+                <div class="s-card-info">
+                    <h1>Long-term Contractual Work</h1>
+                    <p>Negotiable</p>
                 </div>
             </div>
         </div>
-      
-        <footer>
-            <div class="container">
-                <label id="Professional-tab">Professional</label>
-                <div class="desc">Lorem ipsum dolor sit amet, consectetur.</div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="box">
+                <h3>Lorem, ipsum.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
             </div>
-            
-            <div class="container">
-                <label id="Fast-Reliable-tab">Fast & reliable</label>
-                <div class="desc">Lorem ipsum dolor sit amet, consectetur.</div>
+            <div class="box">
+                <h3>Lorem, ipsum.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
             </div>
-            
-            <div class="footer-middle">
-                <p><i class="fab fa-instagram"></i></p>
-                <p>&copy; Jo Smith Photography</p>
-                <p><i class="fab fa-twitter"></i></p>
+            <div class="box">
+                <h3>&copy; Jo Smith Photography</h3>
             </div>
-            
-            <div class="container">
-                <label id="Modern-tab">Modern Photos</label>
-                <div class="desc">Lorem ipsum dolor sit amet, consectetur.</div>
+            <div class="box">
+                <h3>Lorem, ipsum.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
             </div>
-            
-            <div class="container">
-                <label id="Quality-tab">Quality</label>
-                <div class="desc">Lorem ipsum dolor sit amet, consectetur.</div>
+            <div class="box">
+                <h3>Lorem, ipsum.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
             </div>
-        </footer>
-            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-            <script type="text/javascript" src="js/onScroll.js"></script>
-    </body>
+
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/onScroll.js"></script>
+    <script type="text/javascript" src="js/responsiveNav.js"></script>
+</body>
+
 </html>

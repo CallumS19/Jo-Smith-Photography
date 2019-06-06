@@ -1,91 +1,95 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Jo Smith Photography</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css" type="text/css" />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-    </head>
-    <body>
-        <nav>
-            <div class="container">
-                <div class="logo">
-                    <img src="images/Jo_Smith_Logo.png" alt="logo">
-                </div>
-                <div class="list">
-                    <a href="index.html" class="active">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="contact.html">Contact</a>
-                    <a href="services.html">Services</a>
-                </div>
-            </div>
-        </nav>
-        
-        <section class="main">
-            <div class="overlay"></div>
-        </section>
 
-        <div class="pictures">
-            <h2 id="pictures_title">Featured Pictures</h2>
-            <div class="container">
-                <div class="p-frame">
-                    <a href=""><img src="images/Product_1.png" alt="Picture" style="width:360px;height:400px;"></a>
-                </div>
-                <div class="p-frame">
-                    <a href=""><img src="images/Product_2.png" alt="Picture" style="width:360px;height:400px;"></a>
-                </div>
-                <div class="p-frame">
-                    <a href=""><img src="images/Product_3.png" alt="Picture" style="width:360px;height:400px;"></a>
-                </div>
+<head>
+    <title>Jo Smith Photography</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <img src="images/Jo_Smith_Logo.png" alt="logo">
+            </div>
+            <div class="list" id="topnav">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="services.html">Services</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="ResponsiveNav()">
+                <i class="fa fa-bars" style="color: #fff;"></i>
+            </a>
+        </div>
+    </nav>
+
+    <section class="main">
+        <div class="overlay"></div>
+    </section>
+
+    <div class="pictures">
+        <h2 id="pictures_title">Featured Pictures</h2>
+        <div class="container">
+            <div class="p-frame">
+                <a href=""><img src="images/Product_1.png" alt="Picture" style="width:360px;height:400px;"></a>
+            </div>
+            <div class="p-frame">
+                <a href=""><img src="images/Product_2.png" alt="Picture" style="width:360px;height:400px;"></a>
+            </div>
+            <div class="p-frame">
+                <a href=""><img src="images/Product_3.png" alt="Picture" style="width:360px;height:400px;"></a>
             </div>
         </div>
-        <hr class="divider">
-            <div class="statistics">
-                <div class="container">
-                    <div class="stat">
-                        <i class="fas fa-users" style="font-size: 100px;"></i>
-                        <h4>124</h4>
-                    </div>
-                    <div class="stat">
-                        <i class="far fa-images" style="font-size: 100px;"></i>
-                        <h4>400</h4>
-                    </div>
-                    <div class="stat">
-                        <i class="fas fa-pound-sign" style="font-size: 100px;"></i>
-                        <h4>3476</h4>
-                    </div>
-                </div>
+    </div>
+    <hr class="divider">
+    <div class="statistics">
+        <div class="container">
+            <div class="stat">
+                <i class="fas fa-users" style="font-size: 100px;color:#fff;"></i>
+                <h4>124</h4>
             </div>
-        
-        <footer>
-            <div class="container">
-                <label id="Professional-tab">Professional</label>
-                <div class="desc">Lorem ipsum dolor sit amet, consectetur.</div>
+            <div class="stat">
+                <i class="far fa-images" style="font-size: 100px;color:#fff;"></i>
+                <h4>400</h4>
             </div>
-            
-            <div class="container">
-                <label id="Fast-Reliable-tab">Fast & reliable</label>
-                <div class="desc">Lorem ipsum dolor sit amet, consectetur.</div>
+            <div class="stat">
+                <i class="fas fa-pound-sign" style="font-size: 100px;color:#fff;"></i>
+                <h4>3476</h4>
             </div>
-            
-            <div class="footer-middle">
-                <p><i class="fab fa-instagram"></i></p>
-                <p>&copy; Jo Smith Photography</p>
-                <p><i class="fab fa-twitter"></i></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="box">
+                <h3>Lorem, ipsum.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
             </div>
-            
-            <div class="container">
-                <label id="Modern-tab">Modern Photos</label>
-                <div class="desc">Lorem ipsum dolor sit amet, consectetur.</div>
+            <div class="box">
+                <h3>Lorem, ipsum.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
             </div>
-            
-            <div class="container">
-                <label id="Quality-tab">Quality</label>
-                <div class="desc">Lorem ipsum dolor sit amet, consectetur.</div>
+            <div class="box">
+                <h3>&copy; Jo Smith Photography</h3>
             </div>
-        </footer>
-            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-            <script type="text/javascript" src="js/onScroll.js"></script>
-    </body>
+            <div class="box">
+                <h3>Lorem, ipsum.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+            </div>
+            <div class="box">
+                <h3>Lorem, ipsum.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+            </div>
+
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/onScroll.js"></script>
+    <script type="text/javascript" src="js/responsiveNav.js"></script>
+</body>
+
 </html>

@@ -1,76 +1,80 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Jo Smith Photography</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css" type="text/css" />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-    </head>
-    <body>
-        <nav>
-            <div class="container">
-                <div class="logo">
-                    <img src="images/Jo_Smith_Logo.png" alt="logo">
-                </div>
-                <div class="list">
-                    <a href="index.html" class="active">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="contact.html">Contact</a>
-                    <a href="services.html">Services</a>
-                </div>
-            </div>
-        </nav>
-            
-        <section class="main_contact">
-            <div class="overlay"></div>
-        </section>
 
-        <div class="contact">
-            <div class="container">
-                <div class="contact_details">
-                    <h3>987 Brook Street</h3>
-                    <h3>Dundee</h3>
-                    <h3>DD5 2EA</h3>
-                </div>
-                <h2 id="contact_title">Contact Me</h2>
-                <form class="contact_form" action="php/mail.php" method="POST">
-                    <p>Name</p> <input type="text" name="name">
-                    <p>Email</p> <input type="text" name="email">
-                    <p>Message</p> <textarea name="message" cols="25" rows="6"></textarea><br />
-                    <input type="submit" value="Send"><input type="reset" value="Clear">
-                </form>
+<head>
+    <title>Jo Smith Photography</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <img src="images/Jo_Smith_Logo.png" alt="logo">
             </div>
+            <div class="list" id="topnav">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="services.html">Services</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="ResponsiveNav()">
+                <i class="fa fa-bars" style="color: #fff;"></i>
+            </a>
         </div>
-      
-        <footer>
-            <div class="container">
-                <label id="Professional-tab">Professional</label>
-                <div class="desc">Lorem ipsum dolor sit amet, consectetur.</div>
+    </nav>
+
+    <section class="main_contact">
+        <div class="overlay"></div>
+    </section>
+
+    <div class="contact">
+        <div class="container">
+            <div class="contact_details">
+                <h3>987 Brook Street</h3>
+                <h3>Dundee</h3>
+                <h3>DD5 2EA</h3>
             </div>
-            
-            <div class="container">
-                <label id="Fast-Reliable-tab">Fast & reliable</label>
-                <div class="desc">Lorem ipsum dolor sit amet, consectetur.</div>
+            <h2 id="contact_title">Contact Me</h2>
+            <form class="contact_form" action="php/mail.php" method="POST">
+                <p>Name</p> <input type="text" name="name">
+                <p>Email</p> <input type="text" name="email">
+                <p>Message</p> <textarea name="message" cols="25" rows="6"></textarea><br />
+                <input type="submit" value="Send"><input type="reset" value="Clear">
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="box">
+                <h3>Lorem, ipsum.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
             </div>
-            
-            <div class="footer-middle">
-                <p><i class="fab fa-instagram"></i></p>
-                <p>&copy; Jo Smith Photography</p>
-                <p><i class="fab fa-twitter"></i></p>
+            <div class="box">
+                <h3>Lorem, ipsum.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
             </div>
-            
-            <div class="container">
-                <label id="Modern-tab">Modern Photos</label>
-                <div class="desc">Lorem ipsum dolor sit amet, consectetur.</div>
+            <div class="box">
+                <h3>&copy; Jo Smith Photography</h3>
             </div>
-            
-            <div class="container">
-                <label id="Quality-tab">Quality</label>
-                <div class="desc">Lorem ipsum dolor sit amet, consectetur.</div>
+            <div class="box">
+                <h3>Lorem, ipsum.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
             </div>
-        </footer>
-            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-            <script type="text/javascript" src="js/onScroll.js"></script>
-    </body>
+            <div class="box">
+                <h3>Lorem, ipsum.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+            </div>
+
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/onScroll.js"></script>
+    <script type="text/javascript" src="js/responsiveNav.js"></script>
+</body>
+
 </html>

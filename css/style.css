@@ -22,6 +22,11 @@ nav .container {
     align-items: center;
 }
 
+nav .container .icon {
+  display: none;
+  padding-right: 20px;
+}
+
 nav .logo img {
     width: 100%;
     height: 100%;
@@ -29,6 +34,8 @@ nav .logo img {
 }
 
 nav .list a {
+    display: block;
+    float: left;
     background-color: transparent;
     text-decoration: none;
     text-transform: capitalize;
@@ -147,6 +154,7 @@ nav .list a {
 
 .stat h4 {
   text-align: center;
+  color:#fff;
 }
 
 
@@ -292,50 +300,26 @@ nav .list a {
 }
 /* Footer Start */
 footer {
-    padding: 0;
+    padding: 40px 0;
     background-color: #fff;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
     width: 100vw;
-    bottom: 0;
-    height: 15vh;
     border-top: 3px solid #000;
 }
 
-.footer-middle {
-    padding: 0;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    bottom: 0;
-    height: 15vh;
-    text-align: center;
+footer .container {
+  width: 100%;
+  max-width: 1700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-footer p {
-    font-size: 0.8em;
-    font-weight: 400;
+footer .box {
+  width: 100%;
+  max-width: 300px;
 }
 
-.fab {
-    margin: 0 1.5em;
-    font-size: 2em;
-}
-
-.container {
-  margin: 0 2em;
-}
-
-.container > #Modern-tab, #Professional-tab, #Quality-tab, #Fast-Reliable-tab {
-  line-height: 3em;
-}
-
-.container label {
-  color: #292929;
-  font-weight: 700;
-}
 
 /* Footer End */
 
@@ -425,4 +409,62 @@ footer p {
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+  nav .container .list  {display: none;}
+  nav .container a.icon {
+    float: right;
+    display: block;
+  }
+  nav .list a {
+    font-size: 16px;
+  }
+
+  nav .logo {
+    width: 60px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav .container .list.responsive {position: relative;}
+  nav .container .list.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .pictures .container {
+    justify-content: center;
+  }
+
+  .statistics .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .box {
+    text-align: center;
+  }
+
+  .about .container img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .services .container {
+    justify-content: center;
+  }
+  /*nav .container .list.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }*/
 }

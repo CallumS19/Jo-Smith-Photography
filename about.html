@@ -1,69 +1,91 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Jo Smith Photography</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css" type="text/css" />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-    </head>
-    <body>
-        <nav>
-            <div class="container">
-                <div class="logo">
-                    <img src="images/Jo_Smith_Logo.png" alt="logo">
-                </div>
-                <div class="list">
-                    <a href="index.html" class="active">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="contact.html">Contact</a>
-                    <a href="services.html">Services</a>
-                </div>
-            </div>
-        </nav>
-            
-        <section class="main_about">
-            <div class="overlay"></div>
-        </section>
 
-        <div class="about">
-            <div class="container">
-                <h2 id="about_title">about</h2>
-                <q>When I have a camera in my hand, I know no fear</q>
-                <p id="left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, amet. Reiciendis ut sint laudantium dolore ad ducimus incidunt, asperiores esse culpa ab sapiente quod et non. Magnam harum aperiam officiis. ipsum dolor sit amet, consectetur adipisicing elit. Non consequuntur vitae excepturi error repudiandae, quasi iste et, quibusdam amet voluptatum placeat exercitationem dolorum enim unde dicta harum? Veritatis, nam beatae numquam accusantium natus sit quisquam, suscipit iure perspiciatis sint praesentium. Sint, rem in blanditiis autem beatae laboriosam incidunt nesciunt maxime, sapiente vitae tempora, architecto dignissimos! Ipsa nihil repudiandae qui, id minima voluptates inventore, error vitae debitis quo facere veritatis aspernatur., ipsum dolor sit amet consectetur adipisicing elit. Velit illum debitis, ullam ex voluptatibus repudiandae atque, veritatis provident alias, quod modi molestiae praesentium voluptatum maiores minus odio. Qui, facilis natus?</p>
-                <p id="right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat aliquam quis ipsum ex. Nisi, exercitationem non eius quod repellendus quibusdam iusto, voluptatum repellat sequi, quasi saepe velit assumenda minus doloribus! ipsum dolor sit amet consectetur adipisicing elit. Corporis quis mollitia quae, officia nam asperiores necessitatibus rerum omnis eligendi eum quo nostrum quod aperiam excepturi eos voluptate accusantium sit. Voluptatibus amet, at ipsum sed, eligendi placeat eaque nam deleniti repudiandae blanditiis ex tempore ea delectus sint, itaque rerum necessitatibus maiores magnam dignissimos praesentium fuga atque consequatur! Harum rerum illum facere quidem corrupti magnam ullam, error cupiditate ex earum voluptate tenetur!, ipsum dolor sit amet consectetur adipisicing elit. Mollitia temporibus ab quia est nisi, quaerat dolorem possimus quos architecto ipsum praesentium debitis modi cum eaque officia amet tempore qui esse.</p>
-                <img src="https://via.placeholder.com/1000x300" alt="">
+<head>
+    <title>Jo Smith Photography</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <img src="images/Jo_Smith_Logo.png" alt="logo">
             </div>
+            <div class="list" id="topnav">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="services.html">Services</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="ResponsiveNav()">
+                <i class="fa fa-bars" style="color: #fff;"></i>
+            </a>
         </div>
-      
-        <footer>
-            <div class="container">
-                <label id="Professional-tab">Professional</label>
-                <div class="desc">Lorem ipsum dolor sit amet, consectetur.</div>
+    </nav>
+
+    <section class="main_about">
+        <div class="overlay"></div>
+    </section>
+
+    <div class="about">
+        <div class="container">
+            <h2 id="about_title">about</h2>
+            <q>When I have a camera in my hand, I know no fear</q>
+            <p id="left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, amet. Reiciendis ut sint
+                laudantium dolore ad ducimus incidunt, asperiores esse culpa ab sapiente quod et non. Magnam harum
+                aperiam officiis. ipsum dolor sit amet, consectetur adipisicing elit. Non consequuntur vitae excepturi
+                error repudiandae, quasi iste et, quibusdam amet voluptatum placeat exercitationem dolorum enim unde
+                dicta harum? Veritatis, nam beatae numquam accusantium natus sit quisquam, suscipit iure perspiciatis
+                sint praesentium. Sint, rem in blanditiis autem beatae laboriosam incidunt nesciunt maxime, sapiente
+                vitae tempora, architecto dignissimos! Ipsa nihil repudiandae qui, id minima voluptates inventore, error
+                vitae debitis quo facere veritatis aspernatur., ipsum dolor sit amet consectetur adipisicing elit. Velit
+                illum debitis, ullam ex voluptatibus repudiandae atque, veritatis provident alias, quod modi molestiae
+                praesentium voluptatum maiores minus odio. Qui, facilis natus?</p>
+            <p id="right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat aliquam quis ipsum ex. Nisi,
+                exercitationem non eius quod repellendus quibusdam iusto, voluptatum repellat sequi, quasi saepe velit
+                assumenda minus doloribus! ipsum dolor sit amet consectetur adipisicing elit. Corporis quis mollitia
+                quae, officia nam asperiores necessitatibus rerum omnis eligendi eum quo nostrum quod aperiam excepturi
+                eos voluptate accusantium sit. Voluptatibus amet, at ipsum sed, eligendi placeat eaque nam deleniti
+                repudiandae blanditiis ex tempore ea delectus sint, itaque rerum necessitatibus maiores magnam
+                dignissimos praesentium fuga atque consequatur! Harum rerum illum facere quidem corrupti magnam ullam,
+                error cupiditate ex earum voluptate tenetur!, ipsum dolor sit amet consectetur adipisicing elit.
+                Mollitia temporibus ab quia est nisi, quaerat dolorem possimus quos architecto ipsum praesentium debitis
+                modi cum eaque officia amet tempore qui esse.</p>
+            <img src="https://via.placeholder.com/1000x300" alt="">
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="box">
+                <h3>Lorem, ipsum.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
             </div>
-            
-            <div class="container">
-                <label id="Fast-Reliable-tab">Fast & reliable</label>
-                <div class="desc">Lorem ipsum dolor sit amet, consectetur.</div>
+            <div class="box">
+                <h3>Lorem, ipsum.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
             </div>
-            
-            <div class="footer-middle">
-                <p><i class="fab fa-instagram"></i></p>
-                <p>&copy; Jo Smith Photography</p>
-                <p><i class="fab fa-twitter"></i></p>
+            <div class="box">
+                <h3>&copy; Jo Smith Photography</h3>
             </div>
-            
-            <div class="container">
-                <label id="Modern-tab">Modern Photos</label>
-                <div class="desc">Lorem ipsum dolor sit amet, consectetur.</div>
+            <div class="box">
+                <h3>Lorem, ipsum.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
             </div>
-            
-            <div class="container">
-                <label id="Quality-tab">Quality</label>
-                <div class="desc">Lorem ipsum dolor sit amet, consectetur.</div>
+            <div class="box">
+                <h3>Lorem, ipsum.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
             </div>
-        </footer>
-            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-            <script type="text/javascript" src="js/onScroll.js"></script>
-    </body>
+
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/onScroll.js"></script>
+    <script type="text/javascript" src="js/responsiveNav.js"></script>
+</body>
+
 </html>
